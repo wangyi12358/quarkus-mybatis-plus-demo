@@ -4,16 +4,14 @@ quarkus:
     cors: true
   application:
     name: demo
+  mybatis-plus:
+    meta-object-handler: com.example.handler.MetaHandler
   live-reload:
     instrumentation: true
   datasource:
     db-kind: mysql
     username: root
-    password: root
+    password: wangyi12358
     jdbc:
       url: jdbc:mysql://localhost:3306/example_db?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=GMT%2B8
       driver: com.mysql.cj.jdbc.Driver
-
-mybatis-plus:
-  global-config:
-    meta-object-handler: com.example.handler.MetaHandler
